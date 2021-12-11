@@ -1,2 +1,2 @@
 # theme-park
-Theme park mock project
+Theme park web dev project
