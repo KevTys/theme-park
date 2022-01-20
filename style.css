@@ -1,0 +1,401 @@
+*{
+	font-family: 'Roboto', sans-serif;
+	
+}
+
+:root{
+	--color-1: #007bff;
+  }
+  body{
+	  line-height: 1.5;
+	  background-color: #c6cde0;
+  }
+
+  a{
+	  text-decoration: none;
+  }
+  ul{
+	  list-style: none;
+  }
+  .nav-container{
+	  max-width: 1170px;
+	  margin: auto;
+  }
+  .row{
+	  display: flex;
+	  flex-wrap: wrap;
+  }
+  .align-items-center{
+	  align-items: center;
+  }
+  .justify-content-between{
+	  justify-content: space-between;
+  }
+  /*header*/
+  .header{
+	  background-color: var(--color-1);
+	  padding:12px 0;
+	  position: relative;
+  }
+  .header .logo,
+  .header .nav{
+	  padding:0 15px;
+  }
+  .header .logo a{
+	  font-size: 30px;
+	  color: #ffffff;
+	  text-transform: capitalize;
+  }
+  .header .nav ul li{
+	  display: inline-block;
+	  margin-left: 40px;
+  }
+  .header .nav ul li a{
+	  display: block;
+	  font-size: 16px;
+	  padding:10px 0;
+	  color: rgba(255,255,255,0.7);
+	  text-transform: capitalize;
+	  transition: all 0.5s ease;
+  }
+  .header .nav ul li a:hover,
+  .header .nav ul li a.active{
+	  color: #ffffff;
+  }
+  .header #nav-check{
+	  position: absolute;
+	  opacity:0;
+	  pointer-events: none;
+  }
+  .nav-toggler{
+	  height: 34px;
+	  width: 44px;
+	  background-color: #ffffff;
+	  border-radius: 4px;
+	  cursor: pointer;
+	  display: none;
+	  align-items: center;
+	  justify-content: center;
+	  margin-right: 15px;
+  }
+  .nav-toggler span{
+	  display: block;
+	  height: 2px;
+	  width: 20px;
+	  background-color: var(--color-1);
+	  position: relative;
+  }
+  .nav-toggler span::before,
+  .nav-toggler span::after{
+	 content: '';
+	 position: absolute;
+	 width: 100%;
+	 height: 100%;
+	 background-color: var(--color-1);
+	 left:0;
+  }
+  .nav-toggler span::before{
+	  top: -6px;
+  }
+  .nav-toggler span::after{
+	  top: 6px;
+  }
+  @media(max-width: 991px){
+	  .nav-toggler{
+		  display: flex;
+	  }
+	  .header .nav{
+		  position: absolute;
+		  left:0;
+		  top:100%;
+		  width: 100%;
+		  background-color: var(--color-1);
+		  border-top: 1px solid rgba(255,255,255,0.2);
+		  opacity:0;
+		  visibility: hidden;
+	  }
+	  .header .nav ul li{
+		  display: block;
+		  margin:0;
+	  }
+	  .header #nav-check:checked ~ .nav{
+		 opacity: 1;
+		 visibility: visible;
+	  }
+	  .header #nav-check:focus ~ .nav-toggler{
+		  box-shadow: 0 0 15px #000000;
+	  }
+	  .header #nav-check:checked ~ .nav-toggler span{
+		  background-color: transparent;
+	  }
+	  .header #nav-check:checked ~ .nav-toggler span::before{
+		  top:0;
+		  transform: rotate(45deg);
+	  }
+	  .header #nav-check:checked ~ .nav-toggler span::after{
+		  top:0;
+		  transform: rotate(-45deg);
+	  }
+  }
+  
+  
+
+.grid-container{
+	display: grid;
+	height: 100vh;
+	grid-template-columns: 1fr 1fr 1fr 1fr;
+	grid-template-rows: 0.4fr auto auto auto auto auto 0.8fr;
+	grid-template-areas: 
+	"header header header header"
+	"content1 content1 content1 content1"
+	"content2 content2 content2 content2"
+	"content3 content3 content3 content3"
+	"content4 content4 content4 content4"
+	"content5 content5 content5 content5"
+	"footer footer footer footer"
+	;
+}
+
+header{
+	background: #007bff;
+	grid-area: header;
+}
+
+#content1{
+	background: #84ffff;
+	grid-area: content1;
+}
+
+#content2{
+	background: rgb(4, 116, 136);
+	grid-area: content2;
+}
+
+#content3{
+	background: yellowgreen;
+	grid-area: content3;
+}
+
+#content4{
+	background: white;
+	grid-area: content4;
+}
+
+#content5{
+	background: blanchedalmond;
+	grid-area: content5;
+}
+
+footer{
+	grid-area: footer;
+}
+
+@media only screen and (max-width:550px) {
+	.container{
+		grid-template-columns: 1fr;
+		grid-template-rows: 0.4fr auto auto auto auto auto 1fr;
+		grid-template-areas: 
+		"nav"
+		"content1"
+		"content2"
+		"content3"
+		"content4"
+		"content5"
+		"footer";
+	}
+}
+
+/******* PARK TICKETS ********/
+#park_tickets {
+	background-color: blanchedalmond;
+	padding: 0px 0px;
+}
+
+#ticketing .card-container{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+#ticketing .card {
+	margin: 10px 10px 50px 50px;
+	background-color: white;
+	width: 270px;
+	border: 1px solid rgba(92, 163, 221, 0.25);
+	border-radius: 10px;
+	box-shadow: 0 4px 8px 0px rgba(0,0,0,0.1);
+	border-radius: 10px;
+	transition: 0.3s;
+}
+
+
+#ticketing img{
+	max-height: fit-content;
+	max-width: 100%;
+	border-radius: 10px 10px 0 0 ;
+}
+
+#park_tickets h1{
+	font-weight: 650;
+	font-size: 34px;
+	padding-bottom: 5px;
+}
+
+#ticketing .title{
+	text-align: center;
+	padding: 15px 0px;
+}
+
+#ticketing .title p{
+	font-size: 18px;
+}
+
+#ticketing .card:hover{
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#ticketing .card-body{
+	padding: 2px 16px;
+}
+
+#ticketing .card a{
+	color: royalblue;
+	text-decoration: none;
+	font-size: 15px;
+	margin-top: auto;
+	font-weight: 600;
+}
+
+.list-unstyled{
+	list-style-type: none;
+}
+
+.card-title{
+	text-align: center;
+	font-weight: 500;
+}
+
+content2{
+	display:flex;
+	justify-content: center;
+
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.container .season-card{
+	position: relative;
+	max-width: 650px;
+	background: white;
+	margin: 10px;
+	padding: 15px;
+	display: flex;
+}
+
+.season-card{
+	border: 1px solid rgba(234, 238, 8, 0.35);
+	box-shadow: 0 4px 8px 0px rgba(0,0,0,0.1);
+	border-radius: 10px;
+	transition: 0.6s;
+}
+
+.season-card:hover{
+	box-shadow: 0px 5px 16px 0 rgba(235, 194, 12, 0.425);
+}
+
+.container .season-card .imgBx{
+	max-width: 150px;
+	flex: 0 0 150px;
+
+}
+
+.container .season-card .imgBx img{
+	max-width: 100%;
+
+}
+
+.container .card .content{
+	margin-left: 20px;
+}
+
+@media (max-width:991px){
+	
+	.container{
+		flex-direction:column ;
+	}
+}
+
+@media (max-width:768px){
+	
+	.container{
+		flex-direction:column ;
+	}
+
+	.container .season-card{
+		flex-direction: column;
+		max-width: 550px;
+	}
+
+	.container .season-card .imgBx{
+		flex-direction: column;
+		max-width: 100%;
+	}
+}
+
+.offer-container{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.offer{
+	width: 250px;
+	height: 260px;
+	border: none;
+	margin: 5px;
+
+}
+
+.offer p h5{
+	text-align: center;
+}
+
+@media screen and (max-width:759px){
+	.text-border{
+		border-bottom: 1px solid black;
+	}
+	.text-border-1{
+		border-bottom: 1px solid black;
+	}
+}
+
+@media screen and (min-width:760px){
+	.text-border{
+		border-left: 1px solid black;
+		border-right: 1px solid black;
+	}
+}
+
+
+/******** before you buy ********/
+
+#before_you_buy {
+	background-color: yellowgreen;
+}
+
+footer{
+	background-color:#007bff;
+	width:100%;
+	height: 20px;
+	font-size: 20px;
+	font-family: Verdana, Geneva, Tahoma, sans-serif;
+	color: white;
+	padding: 15px;
+	text-align: center;
+  }
+
+  
