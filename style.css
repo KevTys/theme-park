@@ -8,7 +8,9 @@
   }
 body{
 	  line-height: 1.5;
-	  background: #c6cde0;
+	  background: url(images/background.JPG);
+	  background-size: 240px;
+	  background-repeat: repeat;
   }
 
 a{
@@ -294,6 +296,7 @@ header{
 }
 
 #info .btns{
+	float: left;
 	display: block;
 	background: orange;
 	color:white;
@@ -346,7 +349,7 @@ header{
 }
 
 
-#tinfo .card-body{
+#info .card-body{
 	padding: 2px 16px;
 }
 
@@ -447,7 +450,7 @@ cont1{
 	"content5 content5 content5 content5"
 	"footer footer footer footer"
 	;
-	gap: 1rem;
+	gap: 2px;
 }
 
 header{
@@ -456,12 +459,12 @@ header{
 }
 
 #content1{
-	background: #84ffff;
+	background: rgba(212, 202, 166, 0.9);
 	grid-area: content1;
 }
 
 #content2{
-	background: rgb(4, 116, 136);
+	background: rgba(4, 116, 136, 0.9);
 	grid-area: content2;
 }
 
@@ -471,12 +474,12 @@ header{
 }
 
 #content4{
-	background: white;
+	background: rgba(255, 255, 255, 0.95);
 	grid-area: content4;
 }
 
 #content5{
-	background: blanchedalmond;
+	background: rgba(212, 202, 166, 0.9);
 	grid-area: content5;
 }
 
@@ -501,7 +504,7 @@ footer{
 
 /******* PARK TICKETS ********/
 #park_tickets {
-	background-color: blanchedalmond;
+	background: rgba(247, 226, 159, 0.459);
 	padding: 0px 0px;
 }
 
@@ -549,14 +552,6 @@ footer{
 
 #ticketing .card-body{
 	padding: 2px 16px;
-}
-
-#ticketing .card a{
-	color: royalblue;
-	text-decoration: none;
-	font-size: 15px;
-	margin-top: auto;
-	font-weight: 600;
 }
 
 .list-unstyled{
@@ -671,6 +666,39 @@ content2{
 		border-left: 1px solid black;
 		border-right: 1px solid black;
 	}
+}
+
+.buttons{
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.buttons{
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.btn {
+	text-decoration: none;
+	padding: 10px 50px;
+	font-size: 16px;
+	position: relative;
+	margin: 2px;
+}
+
+.btn-1{
+	border: 2px solid rgb(51, 144, 156);
+	
+}
+
+.btn-2{
+	border: 2px solid rgb(36, 138, 33);
+	background: rgb(36, 138, 33);
+	border-radius: 2px;
 }
 
 
