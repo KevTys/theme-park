@@ -27,12 +27,14 @@ ul{
 	list-style-type: none;
 }
 
+.title{
+	color: #fff;
+}
+
 .card-title{
 	text-align: center;
 	font-weight: 500;
 }
-
-
 
 .container{
 	display: flex;
@@ -372,6 +374,55 @@ ul{
 	text-transform: uppercase;
 }
 
+#home .card-container{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+#home .card {
+	margin: 10px 10px 50px 50px;
+	background-color: white;
+	width: 270px;
+	border: 1px solid rgba(92, 163, 221, 0.25);
+	border-radius: 30px;
+	box-shadow: 0 4px 8px 0px rgba(0,0,0,0.1);
+	transition: 0.3s;
+}
+
+#home img{
+	max-height: fit-content;
+	max-width: 100%;
+	border-radius: 30px 30px 0 0 ;
+}
+
+#home .title{
+	color: rgb(255, 255, 255);
+	text-align: center;
+	justify-content: center;
+	padding: 15px 0px;
+}
+
+#home .card:hover{
+	box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+}
+
+#home .card-body{
+	padding: 2px 16px;
+}
+
+#home .card-body ul{
+	text-align: center;
+	justify-content: center;
+	margin: 20px;
+}
+
+#home .title p{
+	font-size: 18px;
+}
+
+
+
 /******* Park Banners (semantics: home-content2)********/
 
 #home-content2 .card {
@@ -393,7 +444,76 @@ ul{
 
 /* Add some padding inside the card container */
 #home-content2 .card-container {
-  padding: 2px 16px;
+  padding: 50px;
+}
+
+/******* "2022 gold pass" (rename?) (semantics: home-content3)********/
+
+#home-content3 img{
+	border-radius: 0;
+}
+
+.container{
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.container .home-main{
+	max-width: auto;
+	background: white;
+	margin: 10px;
+	padding: 15px;
+	display: flex;
+	margin-bottom: 75px;
+	padding-bottom: 30px;
+}
+
+.home-main{
+	border: 1px solid rgba(128, 112, 112, 0.25);
+}
+
+.container .home-main .imgBx{
+	max-width: 750px;
+	flex: 0 0 auto;
+
+}
+
+.container .home-main .imgBx img{
+	max-width: 100%;
+}
+
+.container .home-main .content{
+	margin-left: 60px;
+}
+
+.container .home-main .content p{
+	text-justify: auto;
+}
+
+@media (max-width:991px){
+	
+	.container{
+		flex-direction:column ;
+	}
+}
+
+@media (max-width:1085px){
+	
+	.container{
+		flex-direction:column ;
+	}
+
+	.container .home-main{
+		flex-direction: column;
+		max-width: 550px;
+	}
+
+	.container .home-main .imgBx{
+		flex-direction: column;
+		max-width: 100%;
+	}
+
 }
   
 /*THIS SECTION STYLES THE INFO PAGE (info.html)******/
@@ -681,6 +801,7 @@ footer{
 }
 
 #ticketing .title{
+	color: rgb(255, 255, 255);
 	text-align: center;
 	justify-content: center;
 	padding: 15px 0px;
@@ -855,8 +976,36 @@ content2{
 }
 
 /******* Vacation packages (semantics: content4) to add content below ********/
+#content4 p{
+	text-align: center;
+	justify-content: center;
+}
 
+#content4 h3{
+	margin: 10px;
+	text-align: center;
+	justify-content: center;
+}
+
+#content4 .card-body{
+	margin-bottom: 10px;
+}
 /******* Merchandise (semantics: content5) to add below ********/
+#content5 p{
+	text-align: center;
+	justify-content: center;
+}
+
+#content5 h3{
+	margin: 10px;
+	text-align: center;
+	justify-content: center;
+}
+
+#content .card-body{
+	margin-bottom: 10px;
+}
+
 
 /******* Button styles for tickets page********/
 #park_tickets .btn{
