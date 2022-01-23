@@ -43,6 +43,11 @@ ul{
 }
 
 /******BUTTONS!******/
+.button-container{
+	height: 100%;
+	display: flex;
+}
+
 .buttons{
 	justify-content: center;
 	align-items: center;
