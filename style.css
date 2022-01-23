@@ -202,6 +202,20 @@ ul{
 	}
 }
 
+.btn-full{
+	color: #fff;
+  	background-color: red;
+  	border-color: red;
+}
+
+.btn-full:hover {
+	color: #fff;
+	background-color: rgb(241, 24, 24);
+	border-color: rgb(241, 24, 24);
+}
+
+  
+
 /* ------ SECTION 1 ------*/
 
 .section1 {
@@ -319,11 +333,12 @@ header{
 }
 
 #info .card {
-	margin: 10px 35px 50px 85px; /*By increasing the margin size, the boxes are fit to 3 per row */
+	margin: 10px 25px 50px 35px; /*By increasing the margin size, the boxes are fit to 3 per row */
 	background-color: white;
 	width: 270px;
 	border: 1px solid rgba(128, 112, 112, 0.25);
 	border-radius: 2px;
+	flex-basis: 25%
 
 }
 
@@ -353,14 +368,6 @@ header{
 	padding: 2px 16px;
 }
 
-#info .card a{
-	color: royalblue;
-	text-decoration: none;
-	font-size: 15px;
-	margin-top: auto;
-	font-weight: 600;
-}
-
 cont1{
 	display:flex;
 	justify-content: center;
@@ -374,8 +381,7 @@ cont1{
 }
 
 .container .info-main{
-
-	max-width: fit-content;
+	max-width: auto;
 	background: white;
 	margin: 10px;
 	padding: 15px;
@@ -610,6 +616,11 @@ content2{
 	margin-left: 20px;
 }
 
+#content2 .btn{
+	width: 35%;
+	float: right;
+}
+
 @media (max-width:991px){
 	
 	.container{
@@ -631,6 +642,10 @@ content2{
 	.container .season-card .imgBx{
 		flex-direction: column;
 		max-width: 100%;
+	}
+	#content2 .btn{
+		width: 100% !important;
+		float: right !important;
 	}
 }
 
@@ -673,35 +688,122 @@ content2{
 	align-items: center;
 	display: flex;
 	flex-direction: column;
-}
-
-.buttons{
-	justify-content: center;
-	align-items: center;
-	display: flex;
-	flex-direction: column;
+	margin-bottom: 10px;
 }
 
 .btn {
-	text-decoration: none;
-	padding: 10px 50px;
-	font-size: 16px;
-	position: relative;
+	display: inline-block;
+	font-weight: 400;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-webkit-user-select: none;
 	margin: 2px;
+	user-select: none;
+	border: 1px solid transparent;
+	padding: 0.25rem 0.5rem;
+  	font-size: 0.875rem;
+ 	line-height: 1.5;
+	border-radius: 0.2rem;
+	transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
 }
 
-.btn-1{
-	border: 2px solid rgb(51, 144, 156);
-	
+#park_tickets .btn{
+	width: 85%;
 }
 
-.btn-2{
-	border: 2px solid rgb(36, 138, 33);
-	background: rgb(36, 138, 33);
-	border-radius: 2px;
+.btn-info{
+	color: #17a2b8;
+	background-color: #fff;
+	border-color: #17a2b8;
+}
+
+.btn-info:hover {
+	color: #fff;
+	background-color: #138496;
+	border-color: #117a8b;
+  }
+ 
+
+.btn-info:focus, .btn-info.focus {
+	box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
+  }
+
+.btn-buy{
+	color: #fff;
+  	background-color: #28a745;
+  	border-color: #28a745;
+}
+
+.btn-buy:hover {
+	color: #fff;
+	background-color: #218838;
+	border-color: #1e7e34;
+}
+
+  
+.btn-buy:focus, .btn-buy.focus {
+	box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
+}
+
+.btn-more{
+	color: #007bff;
+  	background-color: #fff;
+  	border-color: #007bff;
+}
+
+.btn-more:hover {
+	color: #fff;
+	background-color: #007bff;
+	border-color: rgb(0, 123, 255);
+}
+
+  
+.btn-more:focus, .btn-more.focus {
+	box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
+}
+
+.btn-lg{
+	padding: 0.5rem 1rem;
+ 	font-size: 1.25rem;
+  	line-height: 1.5;
+  	border-radius: 0.3rem;
+}
+
+.btn-info-more{
+	color: #fff;
+  	background-color: orange;
+  	border-color: orange;
+}
+
+.btn-info-more:hover {
+	color: #fff;
+	background-color: rgb(182, 141, 66);
+	border-color: rgb(182, 141, 66);
+}
+
+  
+.btn-info-more:focus, .btn-info-more.focus {
+	box-shadow: 0 0 0 0.2rem rgb(182, 141, 66);
+}
+
+#cont2 .buttons{
+	float: right;
+	justify-content: right;
+	align-items: right;
+	display: flex;
+	margin-bottom: 5px;
 }
 
 
+
+#content4 .btn{
+	width: 75%;
+}
+
+#content5 .btn{
+	width:75%;
+}
 /******** before you buy ********/
 
 #before_you_buy {
