@@ -1,2 +1,2 @@
 # theme-park
-Theme park web dev project
+Theme park web dev project for mid term submission.
