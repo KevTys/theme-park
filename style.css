@@ -290,7 +290,7 @@ ul{
 	  display: none;
 	  align-items: center;
 	  justify-content: center;
-	  margin-right: 110px;
+	  margin-right: 45px;
 }
 
 .nav-toggler span{
@@ -933,7 +933,7 @@ footer{
 }
 
 #ticketing .card {
-	margin: 10px 10px 50px 50px;
+	margin: 20px 10px;
 	background-color: white;
 	width: 270px;
 	border: 1px solid rgba(92, 163, 221, 0.25);
@@ -1183,6 +1183,10 @@ content2{
 	grid-template-columns: auto auto auto auto;
 	color: white;
 	text-align: center;
+}
+
+.footer p{
+	font-size: 14px;
 }
 
 .footer a{
