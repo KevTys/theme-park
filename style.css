@@ -5,6 +5,15 @@
 	padding: 0;
 }
 
+html,body /*This hides the overflow on the right*/
+{
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+    overflow-x: hidden; 
+}
+
 :root{
 	--color-1: #007bff;
 }
@@ -64,6 +73,18 @@ ul{
   margin-top: auto !important;
 }
 
+.card{
+	margin: 10px 10px 50px 50px;
+	background-color: white;
+	width: 270px;
+	border: 1px solid rgba(92, 163, 221, 0.25);
+	border-radius: 30px;
+	box-shadow: 0 4px 8px 0px rgba(0,0,0,0.1);
+	transition: 0.3s;
+	display: flex;
+	flex-direction: column;
+}
+
 .card-body {
 	-webkit-box-flex: 1;
 	-ms-flex: 1 1 auto;
@@ -79,8 +100,19 @@ ul{
 	flex-wrap: wrap;
 	margin-right: -15px;
 	margin-left: -15px;
-  }
-  
+}
+
+.card-container{
+	padding: 50px 0px;
+	width: 100%;
+	padding-right: 15px;
+	padding-left: 15px;
+	margin-right: auto;
+	margin-left: auto;
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+}
 
 /******BUTTONS!******/
 .buttons{
@@ -172,6 +204,7 @@ ul{
 	color: #fff;
   	background-color: orange;
   	border-color: orange;
+	border-radius: 30px; /*Makes buttons round*/
 }
 
 .btn-info-more:hover {
@@ -378,6 +411,7 @@ ul{
 	color: #fff;
   	background-color: red;
   	border-color: red;
+	border-radius: 20px; /*20px is sufficient to make buttons round in this case*/
 }
 
 .btn-full:hover {
@@ -409,6 +443,8 @@ ul{
 	margin-top: 10%;
 	padding: 10px;
 }
+
+
 
 #home-content1 section{
 	padding: 80px 0;
@@ -513,7 +549,7 @@ ul{
 
 /* Add some padding inside the card container */
 #home-content2 .card-container {
-  padding: 50px;
+  padding: 50px 0px;
   align-content: center !important;
 }
 
@@ -550,6 +586,7 @@ ul{
 
 .home-main{
 	border: 1px solid rgba(128, 112, 112, 0.25);
+	box-shadow: 0 4px 8px 0px rgba(0,0,0,0.1);
 }
 
 .container .home-main .imgBx{
@@ -694,9 +731,9 @@ ul{
 /******* Button styles for Info page********/
 
 #cont2 .buttons{ 
-	float: right;
-	justify-content: right;
-	align-items: right;
+	float: right !important;
+	justify-content: right !important;
+	align-items: right !important;
 	display: flex;
 	margin-bottom: 5px;
 }
@@ -726,6 +763,7 @@ cont1{
 
 .info-main{
 	border: 1px solid rgba(128, 112, 112, 0.25);
+	box-shadow: 0 4px 8px 0px rgba(0,0,0,0.1);
 }
 
 
@@ -863,6 +901,7 @@ footer{
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
+	padding: 50px 0px;
 }
 
 #ticketing .card {
@@ -1090,7 +1129,7 @@ content2{
 	font-size: 30px;
 }
 
-#content .card-body{
+#content5 .card-body{
 	margin-bottom: 10px;
 }
 
