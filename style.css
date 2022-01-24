@@ -560,7 +560,7 @@ ul{
 
 /******* "2022 gold pass" (rename?) (semantics: home-content3)********/
 
-#home-content3 h1{
+#home-content3 h2{
 	font-size: 36px;
 	font-weight: 700;
 }
@@ -988,6 +988,10 @@ footer{
 	font-weight: 650;
 	font-size: 34px;
 	padding-bottom: 5px;
+}
+
+#content1 li{
+	margin: 15px;
 }
 
 

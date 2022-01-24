@@ -1,7 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-<html>
-	<head>
+ <head>
     <!-- Required meta tags -->
     <meta charset="utf-8">
 	<meta name="description" content="Theme park ticketing page">
@@ -10,11 +9,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 	<link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href = "style.css" rel = "stylesheet">
-	
     <title>Theme Park Tickets</title>
-  </head>
-	<body>
-		<div class="tickets-grid-container" id="ticketing">
+ 	</head>
+	<body id="ticketing">
+		<tickets-grid class="tickets-grid-container">
 			<header class="header">
 				<div class="nav-container">
 					<div class="row align-items-center justify-content-between">
@@ -36,7 +34,7 @@
 				</div>
 			 </header>
 			 
-			<content1 id="content1">
+			<tix-card id="content1">
 				<section id="park_tickets">
 					<div class="title">
 						<h1>TICKETS</h1>
@@ -44,17 +42,14 @@
 					<div class="card-container">
 								<div class="card">
 									<div class="card-image">
-										<img src="images/rollercoaster.jpg">
+										<img src="images/rollercoaster.jpg" alt="Park1 banner">
 									</div>
 									<div class="card-body d-flex flex-column">
-										<h3 class="card-title"><b>Park 1</b></h5>
+										<h3 class="card-title"><b>Park 1</b></h3>
 											<ul class="list-unstyled">
 												<li>Rollercoasters</li>
-												<br>
 												<li>Carousels</li>
-												<br>
 												<li>All access to parks</li>
-												<br>
 												<li>Carnival food</li>
 											</ul>
 											<div class="buttons mt-auto">
@@ -67,17 +62,14 @@
 		
 								<div class="card">
 									<div class="card-image">
-										<img src="images/waterpark.jpg">
+										<img src="images/waterpark.jpg" alt="Park2 banner">
 									</div>
 									<div class="card-body d-flex flex-column ">
 										<h3 class="card-title"><b>Park 2</b></h3>
 										<ul class="list-unstyled">
 											<li>Water slides</li>
-											<br>
 											<li>Lazy rivers</li>
-											<br>
 											<li>Simulated beach</li>
-											<br>
 											<li>Seafood</li>
 										</ul>
 										<div class="buttons mt-auto">
@@ -89,17 +81,14 @@
 		
 							 <div class="card">
 									<div class="card-image">
-										<img src="images/park.png">
+										<img src="images/park.png" alt="park3 banenr">
 									</div>
 									<div class="card-body d-flex flex-column">
 										<h3 class="card-title"><b>Park 3</b></h3>
 										<ul class="list-unstyled">
 											<li>Fantasy themed rides</li>
-											<br>
 											<li>Mascot characters</li>
-											<br>
 											<li>Live shows</li>
-											<br>
 											<li>Family friendly restaurants</li>
 										</ul>
 										<div class="buttons mt-auto">
@@ -110,12 +99,13 @@
 								</div>
 					</div>
 				</section>
-			</content1>
-			<content2 id="content2">
+			</tix-card>
+
+			<season-card id="content2">
 				<div class="container">
 					<div class="season-card">
 						<div class="imgBx">
-							<img src="images/golden_ticket.jpg">
+							<img src="images/golden_ticket.jpg" alt="seasonal event ticket image">
 						</div>
 						<div class="content">
 							<h2>Seasonal event tickets</h2>
@@ -125,9 +115,9 @@
 						
 					</div>
 				</div>
-			</content2>
+			</season-card>
 			
-			<content3 id="content3">
+			<deals-info id="content3">
 				<section>
 					<h1 class="title">Before you buy</h1>
                	 	<h3 class="title">Consider our offers!</h3>
@@ -147,13 +137,13 @@
 					</div>
 				</div>
 				</section>
-			</content3>
+			</deals-info>
 
-			<content4 id="content4">
+			<add-on-packages id="content4">
 				<div class="card-container">
 					<div class="card">
 						<div class="card-image">
-							<img src="images/hotel.jpg">
+							<img src="images/hotel.jpg" alt="hotel image">
 						</div>
 						<div class="card-body d-flex flex-column">
 							<h5 class="card-title"><b>Hotels</b></h5>
@@ -168,7 +158,7 @@
 
 					<div class="card">
 						<div class="card-image">
-							<img src="images/express_ticket.jpg">
+							<img src="images/express_ticket.jpg" alt="express ticket image">
 						</div>
 						<div class="card-body d-flex flex-column">
 							<h5 class="card-title"><b>Express pass</b></h5>
@@ -183,7 +173,7 @@
 
 					<div class="card">
 						<div class="card-image">
-							<img src="images/resort.jpg">
+							<img src="images/resort.jpg" alt="vacation packages image">
 						</div>
 						<div class="card-body d-flex flex-column">
 							<h5 class="card-title"><b>Vacation packages</b></h5>
@@ -196,16 +186,16 @@
 						</div>
 					</div>
 				</div>
-			</content4>
+			</add-on-packages>
 
-			<content5 id="content5">
+			<merch-store id="content5">
 				<div class="title">
 					<h3 class="center">Merchandise Mart!</h3>
 				</div>
 				<div class="card-container">
 					<div class="card">
 						<div class="card-image">
-							<img src="images/hat.jpg">
+							<img src="images/hat.jpg" alt="hat">
 						</div>
 						<div class="card-body d-flex flex-column">
 							<h5 class="card-title"><b>Official Cap</b></h5>
@@ -222,7 +212,7 @@
 
 					<div class="card">
 						<div class="card-image">
-							<img src="images/shirt.jpg">
+							<img src="images/shirt.jpg" alt="shirt">
 						</div>
 						<div class="card-body d-flex flex-column">
 							<h5 class="card-title"><b>Official t-shirt</b></h5>
@@ -239,7 +229,7 @@
 
 					<div class="card">
 						<div class="card-image">
-							<img src="images/mug.jpg">
+							<img src="images/mug.jpg" alt="mug">
 						</div>
 						<div class="card-body d-flex flex-column">
 							<h5 class="card-title"><b>Official Mug</b></h5>
@@ -254,7 +244,7 @@
 						
 					</div>
 				</div>
-			</content5>
+			</merch-store>
 			
 			<footer class="footer">
 				<div id="address">
@@ -278,6 +268,6 @@
 					<input type="text" name="email" placeholder="  Enter Email Address">
 				</div>
 			</footer>
-		</div>
+		</tickets-grid>
 	</body>
 </html>

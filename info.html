@@ -12,7 +12,7 @@
     <title>Theme Park Information</title>
   </head>
   <body id="info">
-    <div class="info-grid-container">
+    <info-grid class="info-grid-container">
 			<header class="header">
 				<div class="nav-container">
 					<div class="row align-items-center justify-content-between">
@@ -26,7 +26,7 @@
 					   <nav class="nav">
 						  <ul>
 							 <li><a href="index.html" >Home</a></li>
-							 <li><a href="info.html"class="active">Information</a></li>
+							 <li><a href="info.html" class="active">Information</a></li>
 							 <li><a href="tickets.html" >Tickets</a></li>
 						  </ul>
 					   </nav>
@@ -34,11 +34,11 @@
 				</div>
 			 </header>
 			 
-			<cont1 id="cont1">
+			<head-info id="cont1">
 				<div class="container">
 					<div class="info-main">
 						<div class="imgBx">
-							<img src="images/photo2.jpeg">
+							<img src="images/photo2.jpeg" alt="Plan your visit image">
 						</div>
 						<div class="content">
 							<h2>Plan your visit</h2>					
@@ -46,17 +46,17 @@
 						</div>
 					</div>
 				</div>
-			</cont1>
+			</head-info>
 
-			<cont2 id="cont2">
+			<inf-cards id="cont2">
 				<section>
 					<div class="card-container">
 							<div class="card" id="park-schedule">
 								<div class="card-image">
-								<img src="images/schedule.jpg">
+								<img src="images/schedule.jpg" alt="schedule image">
 								</div>
 								<div class="card-body d-flex flex-column">
-									<h3 class="card-title"><b>Park Schedule</b></h5>
+									<h3 class="card-title"><b>Park Schedule</b></h3>
 									<p>Tuesday-Sunday: 9:00am to 11pm. Closed on Mondays.</p>
 									<div class="buttons mt-auto">
 										<a href="#" class="btn-lg btn-info-more">More</a>
@@ -66,7 +66,7 @@
 		
 							<div class="card" id="directions">
 								<div class="card-image">
-									<img src="images/directions.jpg">
+									<img src="images/directions.jpg" alt="directions image">
 								</div>
 								<div class="card-body d-flex flex-column">
 									<h3 class="card-title"><b>Directions</b></h3>
@@ -79,7 +79,7 @@
 		
 							<div class="card" id="safety">
 								<div class="card-image">
-									<img src="images/safety.jpg">
+									<img src="images/safety.jpg" alt="safety image">
 								</div>
 								<div class="card-body d-flex flex-column">
 									<h3 class="card-title"><b>Guest Safety</b></h3>
@@ -92,7 +92,7 @@
 
                				 <div class="card" id="parkmap">
 								<div class="card-image">
-									<img src="images/parkmap.jpg">
+									<img src="images/parkmap.jpg" alt="park-map">
 								</div>
 								<div class="card-body d-flex flex-column">
 									<h3 class="card-title"><b>Park Map</b></h3>
@@ -105,7 +105,7 @@
 
                				 <div class="card" id="tips">
 								<div class="card-image">
-									<img src="images/tips.jpg">
+									<img src="images/tips.jpg" alt="tips image">
 								</div>
 								<div class="card-body d-flex flex-column">
 									<h3 class="card-title"><b>Tips</b></h3>
@@ -118,7 +118,7 @@
 
                				<div class="card" id="parking">
 								<div class="card-image">
-									<img src="images/parking.jpg">
+									<img src="images/parking.jpg" alt="parking image">
 								</div>
 								<div class="card-body d-flex flex-column">
 									<h3 class="card-title"><b>Parking</b></h3>
@@ -130,13 +130,13 @@
 							</div>
 						</div>
 				</section>
-			</cont2>
+			</inf-cards>
 
-			<cont3 id="cont3">
+			<parks-info id="cont3">
 				<div class="container">
 					<div class="info-main" id="park1-info">
 						<div class="imgBx">
-							<img src="images/carousel.jpg">
+							<img src="images/carousel.jpg" alt="Park 1 banner">
 						</div>
 						<div class="content">
 							<h2>Park 1</h2>
@@ -153,7 +153,7 @@
 
 					<div class="info-main" id="park2-info">
 						<div class="imgBx">
-							<img src="images/waterpark_info.jpg">
+							<img src="images/waterpark_info.jpg" alt="Park 2 banner">
 						</div>
 						<div class="content">
 							<h2>Park 2</h2>
@@ -171,7 +171,7 @@
 
 					<div class="info-main" id="park3-info">
 						<div class="imgBx">
-							<img src="images/themepark_info.jpg">
+							<img src="images/themepark_info.jpg" alt="Park 3 banner">
 						</div>
 						<div class="content">
 							<h2>Park 3</h2>
@@ -186,7 +186,7 @@
 						
 					</div>
 				</div>
-			</cont3>
+			</parks-info>
 
 			<footer class="footer">
 				<div id="address">
@@ -210,6 +210,6 @@
 					<input type="text" name="email" placeholder="  Enter Email Address">
 				</div>
 			</footer>
-		</div>
+	</info-grid>
   </body>
 </html>
