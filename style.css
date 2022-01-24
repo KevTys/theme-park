@@ -649,6 +649,7 @@ ul{
 	"header header header header"
 	"cont1 cont1 cont1 cont1"
 	"cont2 cont2 cont2 cont2"
+	"cont3 cont3 cont3 cont3"
 	"footer footer footer footer"
 	;
 }
@@ -668,6 +669,11 @@ ul{
 	grid-area: cont2;
 }
 
+#cont3{
+	background: rgba(255, 255, 255, 0.95);;
+	grid-area: cont3;
+}
+
 
 
 
@@ -679,6 +685,7 @@ ul{
 		"header"
 		"cont1"
 		"cont2"
+		"cont3"
 		"footer";
 	}
 }
@@ -814,6 +821,7 @@ cont1{
 }
 
 /******* INFORMATION CARDS (semantics: cont2) ********/
+/* This section is for the information cards on the page. It does not have any hover effects as we believe this will improve readability, and users would be more interested in the content over effects*/
 #info .card-body{
 	padding: 2px 16px;
 }
@@ -825,6 +833,10 @@ cont1{
 #cont2 .card-title{
 	padding-bottom: 15px;
 }
+
+/******* Park information (semantics: cont3) ********/
+/*This section uses the same styling instructions as the 'planning your visit' box in cont1*/
+
 /*SECTION-END******/
   
   
