@@ -1,3 +1,4 @@
+/*Most images (i.e within the cards) have been resized in a photo editor******/
 /*Some styles in general******/
 *{
 	font-family: 'Roboto', sans-serif;
@@ -123,7 +124,7 @@ ul{
 	margin-bottom: 10px;
 }
 
-.btn {
+.btn { /*this defines the btns class, which styles the anchor tag to look like a button*/
 	display: inline-block;
 	font-weight: 400;
 	text-align: center;
@@ -142,13 +143,13 @@ ul{
 
 
 
-.btn-info{
+.btn-info{ /*This is for the info button, it is styled as a secondary button; white background and border color following the text color*/
 	color: #17a2b8;
 	background-color: #fff;
 	border-color: #17a2b8;
 }
 
-.btn-info:hover {
+.btn-info:hover { /*effects for the info button*/
 	color: #fff;
 	background-color: #138496;
 	border-color: #117a8b;
@@ -159,7 +160,7 @@ ul{
 	box-shadow: 0 0 0 0.2rem rgba(23, 162, 184, 0.5);
   }
 
-.btn-buy{
+.btn-buy{ /*This is for the 'buy' button, it is styled as a primary button; background following border color*/
 	color: #fff;
   	background-color: #28a745;
   	border-color: #28a745;
@@ -176,7 +177,7 @@ ul{
 	box-shadow: 0 0 0 0.2rem rgba(40, 167, 69, 0.5);
 }
 
-.btn-more{
+.btn-more{ /*This is for the 'more' button use in info.html, it is styled as a primary button; background following border color*/
 	color: #007bff;
   	background-color: #fff;
   	border-color: #007bff;
@@ -193,7 +194,7 @@ ul{
 	box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.5);
 }
 
-.btn-lg{
+.btn-lg{/*Used for info.html card buttons to make large buttons*/
 	padding: 0.5rem 1rem;
  	font-size: 1.25rem;
   	line-height: 1.5;
@@ -202,8 +203,8 @@ ul{
 
 .btn-info-more{
 	color: #fff;
-  	background-color: orange;
-  	border-color: orange;
+  	background-color: rgb(103, 187, 212);
+  	border-color: rgb(103, 187, 212);
 	border-radius: 30px; /*Makes buttons round*/
 }
 
@@ -219,7 +220,7 @@ ul{
 }
 
 /*********************************************************START OF NAV SECTION*********************************************************/
-
+/**This section styles the navigation bar in the header **/
 .nav-container{
 	  max-width: 1170px;
 	  margin: auto;
@@ -317,7 +318,7 @@ ul{
 	  top: 6px;
 }
 
-@media(max-width: 991px){
+@media(max-width: 991px){ /* For smaller displays, the nav bar minimises and is opened with a checkbox*/
 	  .nav-toggler{
 		  display: flex;
 	  }
@@ -390,7 +391,7 @@ ul{
 
 
 
-@media only screen and (max-width:991px) {
+@media only screen and (max-width:991px) { /*On smaller displays, the content of the webpage is lined up in a single column from header to footer as defined*/
 	.home-grid-container{
 		grid-template-columns: 1fr;
 		grid-template-rows: 0.4fr auto auto auto auto 1fr;
@@ -407,7 +408,7 @@ ul{
 
 /******* Button styles for the home page********/
 
-.btn-full{
+.btn-full{ /*red buttons for index.html*/
 	color: #fff;
   	background-color: red;
   	border-color: red;
@@ -607,7 +608,7 @@ ul{
 	text-justify: auto;
 }
 
-@media (max-width:991px){
+@media (max-width:991px){ /*For smaller displays (tablets, mobile phones*/
 	
 	.container{
 		flex-direction:column ;
@@ -620,7 +621,7 @@ ul{
 
 }
 
-@media (max-width:1085px){
+@media (max-width:1085px){ /*For deskstop computers or larger displays*/
 	
 	.container{
 		flex-direction:column ;
@@ -792,14 +793,18 @@ cont1{
 	text-justify: auto;
 }
 
-@media (max-width:991px){
+@media (max-width:991px){ /*For smaller displays*/
 	
 	.container{
 		flex-direction:column ;
 	}
+
+	#cont1 {
+		text-align: center;
+	}
 }
 
-@media (max-width:1085px){
+@media (max-width:1085px){ /*For larger displays*/
 	
 	.container{
 		flex-direction:column ;
@@ -836,7 +841,18 @@ cont1{
 
 /******* Park information (semantics: cont3) ********/
 /*This section uses the same styling instructions as the 'planning your visit' box in cont1*/
+#cont3 h2{
+	font-size: 36px;
+	text-align: center;
+}
 
+#cont3 li{
+	font-size: 18px;
+}
+
+#cont3 p{
+	font-size: 18px;
+}
 /*SECTION-END******/
   
   
@@ -1023,14 +1039,14 @@ content2{
 	float: right;
 }
 
-@media (max-width:991px){
+@media (max-width:991px){ /*For larger displays, the content in the 'seasonal events' container becomes horizontal, with picture beside text*/
 	
 	.container{
 		flex-direction:column ;
 	}
 }
 
-@media (max-width:768px){
+@media (max-width:768px){ /*For smaller displays, the content in the 'seasonal events' container becomes vertical, with picture above text*/
 	
 	.container{
 		flex-direction:column ;
@@ -1045,7 +1061,7 @@ content2{
 		flex-direction: column;
 		max-width: 100%;
 	}
-	#content2 .btn{
+	#content2 .btn{ /*Stretches the button to fill the bottom of the container*/
 		width: 100% !important;
 		float: right !important;
 	}
@@ -1092,7 +1108,7 @@ content2{
 
 
 
-@media screen and (max-width:759px){
+@media screen and (max-width:759px){ /*Adds a border depending on the size of the display to segregate different content*/
 	.text-border{
 		border-bottom: 1px solid black;
 	}
